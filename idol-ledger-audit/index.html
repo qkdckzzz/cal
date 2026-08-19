@@ -19,11 +19,11 @@
   </style>
 </head>
 <body><main>
-  <header><div><p class="eyebrow">KDC</p><h1 class="title">偶像运营账本</h1></div><span class="badge">P0 已实现</span></header>
+  <header><div><p class="eyebrow">KDC</p><h1 class="title">偶像运营账本</h1></div><span class="badge">第二轮已实现</span></header>
   <div class="balance"><span>当前公账</span><strong>¥28,420.00</strong><p>没有早上好 / 下午好 / 晚上好 / 欢迎回来或用户名问候</p></div>
   <div class="metrics">
     <div class="card"><span>本月收入</span><strong>¥7,000.00</strong></div><div class="card"><span>本月项目成本</span><strong>¥3,100.00</strong></div><div class="card"><span>本月经营利润</span><strong>¥3,900.00</strong></div>
-    <div class="card"><span>待报销</span><strong>¥1,800.00</strong></div><div class="card"><span>待转公账</span><strong>¥600.00</strong></div><div class="card"><span>总待结算</span><strong>¥10,250.00</strong></div>
+    <div class="card"><span>待报销</span><strong>¥1,800.00</strong></div><div class="card"><span>待转公账</span><strong>¥600.00</strong></div><div class="card"><span>总待结算</span><strong>¥28,500.00</strong></div>
   </div>
   <section><h2>本月收入</h2><div class="income">
     <div class="card"><span>官号收账</span><strong>¥2,000</strong></div><div class="card"><span>微店电切收入</span><strong>¥3,200</strong></div>
@@ -35,12 +35,21 @@
     <div class="row"><div><b>fq · 练习室租赁</b><span>fq 微信 · 待报销 ¥600</span></div><span class="status">未报销</span></div>
   </div></section>
   <section><h2>快速支出规则</h2><div class="notice"><b>付款账户：ly 支付宝</b><span>该账户属于成员个人账户。此项目支出将自动记录为：ly 垫付 · 未报销。</span></div></section>
+  <section><h2>AI 待确认流水</h2><div class="notice"><b>XX练习室　−¥600</b><span>fq 微信 · 建议分类：练习室租赁</span><span>建议记账：fq 垫付 · 待报销 ¥600</span><span>AI识别 · 待确认 · 查看并确认</span></div></section>
+  <section><h2>拍切分成矩阵</h2><div class="rules">
+    <div class="rule"><b>月场均 &lt;100</b><span>KDC 65% · 艺人 35% · 6.5 : 3.5</span></div>
+    <div class="rule"><b>月场均 ≥100 且 &lt;200</b><span>KDC 60% · 艺人 40% · 6 : 4</span></div>
+    <div class="rule"><b>月场均 ≥200</b><span>KDC 55% · 艺人 45% · 5.5 : 4.5</span></div>
+    <div class="rule"><b>硬限制与相纸</b><span>艺人最高 45%；相纸 ¥6/张，从艺人所得中扣除。</span></div>
+  </div></section>
   <section><h2>确定性验收</h2><div class="rules">
     <div class="rule"><b>成员个人账户项目支出</b><span>项目成本增加，个人账户减少，成员待报销增加，KDC 公账不变。</span></div>
     <div class="rule"><b>KDC 项目账户支出</b><span>项目成本增加，对应项目账户减少，不产生成员待报销。</span></div>
     <div class="rule"><b>成员私人消费</b><span>标记非项目后不进入正式 KDC 财务流水。</span></div>
     <div class="rule"><b>微店收入后提现</b><span>首次记录经营收入；提现只做内部转账，不重复计算收入。</span></div>
-    <div class="rule"><b>AI 截图后处理</b><span>fq 微信 + XX练习室会推荐 fq 垫付、练习室租赁和未报销；不确定分类时返回空。</span></div>
+    <div class="rule"><b>AI 真实闭环</b><span>私有上传 → OpenAI 图像理解 → Structured Output → Pending → 用户确认 → 正式流水；AI 不直接入账。</span></div>
+    <div class="rule"><b>普通流水结算</b><span>应结算、已结算、待结算金额自动推导未结算 / 部分结算 / 已结算，与报销状态严格分开。</span></div>
+    <div class="rule"><b>不可变月结</b><span>月底按最终场均生成规则版本快照，确认后不会因未来规则修改而变化。</span></div>
   </div></section>
-  <footer>验证：ESLint、TypeScript、16 项领域测试、生产构建与服务端渲染测试全部通过。线上 Demo：<a href="https://idol-ledger-cn-demo.vercel.app/">idol-ledger-cn-demo.vercel.app</a></footer>
+  <footer>验证：ESLint、TypeScript、26 项单元测试、3 项集成测试、1 项 SSR 测试、390 × 844 移动端浏览器验收与生产构建全部通过。线上 Demo：<a href="https://idol-ledger-cn-demo.vercel.app/">idol-ledger-cn-demo.vercel.app</a></footer>
 </main></body></html>
