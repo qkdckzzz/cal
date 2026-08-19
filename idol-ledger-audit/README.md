@@ -1,6 +1,8 @@
 # KDC 偶像运营账本｜第二轮完整版验收页
 
-线上 Demo：<https://idol-ledger-cn-demo.vercel.app/>
+GPT 可直接读取的公开 Demo：<https://kdc-idol-ledger-demo.vercel.app/>
+
+完整 Sites 运行版：<https://idol-ledger-20260818.qkdckzzz.chatgpt.site/>
 
 本文件只描述当前仓库中的真实实现。线上 Demo 未配置用户的 Supabase 和 OpenAI 密钥时使用不写库的演示数据；真实上传、OpenAI 图像理解、Pending、确认入账和月结 API 已实现，但只有配置外部服务后才会在生产环境实际调用。
 
